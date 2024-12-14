@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css main file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+      <div class="weather-app close">
+        <div class="input-bx">
+          <form action="">
+            <input type="text" placeholder="Type Country Name" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="weather-info">
+          <div class="weather-img"><img src="imgs/clear.png" alt="" /></div>
+          <!-- <div class="weather-img"></div> -->
+          <!--  -->
+          <div class="weather-temp">
+            <h3 class="temp">??°c</h3>
+            <p class="city">??</p>
+          </div>
+          <!--  -->
+          <div class="humidity-wind">
+            <div class="col">
+              <img src="imgs/humidity.png" alt="" />
+              <div class="info">
+                <span class="value humidity">??%</span>
+                <span>humidity</span>
+              </div>
+            </div>
+            <div class="col">
+              <img src="imgs/storm.png" alt="" />
+              <div class="info">
+                <span class="value wind-speed">?? km/h</span>
+                <span>wind speed</span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./all.min.js"></script>
+  </body>
+</html>

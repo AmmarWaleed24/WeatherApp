@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #eee, #222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto", serif;
+}
+
+
+
+.weather-app {
+  height: 450px;
+  width: 350px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border-radius: 10px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  padding: 15px 10px;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+.weather-app.close {
+  height: 78px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+.weather-app .input-bx {
+  margin-bottom: 20px;
+}
+.weather-app .input-bx form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-app .input-bx input {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  padding: 15px 0 15px 15px;
+  margin-right: 10px;
+  border-radius: 25px;
+  width: 80%;
+  font-size: 16px;
+  color: #24ac87;
+}
+.weather-app .input-bx button {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*start=> handle temprature image and country name */
+.weather-info {
+  height: calc(100% - 45px);
+}
+.weather-info .weather-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  height: 160px;
+  margin: 0px auto 10px auto;
+  /* background-color: red; */
+}
+
+.weather-info .weather-img img {
+  width: 140px;
+  height: auto;
+  /* display: none; */
+}
+
+.weather-info .weather-temp {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.weather-info .weather-temp h3 {
+  font-size: 45px;
+  padding: 0;
+  margin: 0;
+}
+
+.weather-info .weather-temp p {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.humidity-wind {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.humidity-wind .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.humidity-wind .col .info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+.humidity-wind .col .info span.value {
+  margin-bottom: 2px;
+}
+/* end=> handle temprature image and country name */
